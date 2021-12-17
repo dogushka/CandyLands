@@ -128,7 +128,7 @@ sr.reveal(`.giving__content, .gift__card`,{interval: 100})
 sr.reveal(`.celebrate__data, .message__form, .footer__img1`,{origin: 'left'})
 sr.reveal(`.celebrate__img, .message__img, .footer__img2`,{origin: 'right'})
 
-var duration = 15 * 500;
+var duration = 15 * 200;
 var animationEnd = Date.now() + duration;
 var skew = 1;
 
