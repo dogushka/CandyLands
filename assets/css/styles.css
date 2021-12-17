@@ -899,6 +899,14 @@ body.dark-theme {
     animation: progress-animation 2s linear infinite;
   }
 
+@keyframes progress-animation{
+    0% {
+        background-position: 100%;   
+    }
+    100% {
+        background-position: 0;
+        }}
+
   .iw-modal {
     opacity: 0; /*изначально этот блок должен быть прозрачным*/ 
     background: rgba(0,0,0,0.5); /*задаём цвет фона*/
