@@ -161,3 +161,22 @@ function randomInRange(min, max) {
     requestAnimationFrame(frame);
   }
 }());
+
+const tabs = document.querySelectorAll('[data-target]'),
+      tabContents = document.querySelectorAll('[data-content]')
+
+tabs.forEach(tab =>{
+  tab.addEventListener('click', () =>{
+    const target = document.querySelector(tab.dataset.target)
+
+    tabContents.forEach(tabContent =>{
+      tabContent.classList.remove('guver__active')
+    })
+    target.classList.add('guver__Active')
+
+    tab.forEach(tab =>{
+      tab.classList.remove('guver__active')
+    })
+    tab.classList.add('guver__active')
+  })
+})
